@@ -16,7 +16,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: |
           npm i
-          npm run build
           git config --global user.email "gilzon.me@gmail.com"
           git config --global user.name "Gilson Gilbert"
           npm publish
