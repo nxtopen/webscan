@@ -39,9 +39,9 @@ async function webScan(domain) {
         ]);
 
         return {
-            'SSL_CERTIFICATE': sslcertificateResponse,
-            'HTTP_CERTIFICATE': httpscertificateResponse,
-            'PAGES': pagesResponse,
+            'SSL_CERTIFICATE': JSON.stringify(sslcertificateResponse),
+            'HTTP_CERTIFICATE': JSON.stringify(httpscertificateResponse),
+            'PAGES': JSON.stringify(pagesResponse),
         };
     } catch (error) {
         throw error;
